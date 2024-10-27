@@ -1,0 +1,80 @@
+.footer {
+  margin-top: 100px;
+  color: #d9d9d9;
+  background-color: #323232;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 8vw;
+  padding-top: 80px;
+}
+
+.footer-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 80px;
+}
+
+.footer-content-left,
+.footer-content-right,
+.footer-content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.footer-content-left li,
+.footer-content-right li,
+.footer-content-center li {
+  list-style: none;
+}
+
+.footer-content-right h2,
+.footer-content-center h2 {
+  color: white;
+}
+
+.footer-social-icons img {
+  width: 40px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.footer-social-icons img:hover {
+  transform: scale(1.05);
+}
+
+.footer hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #ddd; /* Default styling for the hr */
+  margin: 20px 0; /* Space around the hr */
+}
+
+/* Add additional styling for the hr */
+.footer hr.styled-hr {
+  border-top: 2px solid #666; /* Custom color and thickness */
+  width: 80%; /* Custom width */
+  margin: 20px auto; /* Center the hr */
+}
+
+.footer-copyright {
+  margin-top: auto; /* Push the copyright text to the bottom */
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+@media (max-width: 750px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .footer-copyright {
+    text-align: center;
+  }
+}
